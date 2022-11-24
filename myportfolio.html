@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="myport2.css">
+    <script src="https://kit.fontawesome.com/f7341ef0e6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p>Data Analyst</p>
+        <h1>Hi,I am <span>Simrah Rafiqi</span><br> from Kashmir</h1>
+    </div>
+</div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    
+                    <img src="project/user.png">
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus iusto mollitia, ex facilis pariatur, voluptatibus ab sequi reprehenderit repellat nisi porro architecto, tenetur iste aspernatur exercitationem dicta ratione harum. Quidem.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+
+                            <li><span>C++</span><br></li>
+                            <li><span>Python</span><br></li>
+                            <li><span>HTML</span><br></li>
+                            <li><span>CSS</span><br></li>
+                            <li><span>JAVASCRRIPT</span><br></li>
+                            <li><span>MY SQL</span><br></li>
+                            <li><span>WEB SCRAPING</span><br></li>
+                            <li><span>POWER BI</span><br></li>
+                            <li><span>TABLEAU</span><br></li>
+                            <li><span>MICROSOFT EXCEL</span><br></li>
+                            <li><span>APACHE AIRFLOW</span><br></li>
+                            <li><span>SNOWFLAKE</span><br></li>
+                            <li><span>CLOUD COMPUTING</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>NULL</span><br></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2006-2019</span><br>Mallinson Girls High School</li>
+                            <li><span>2020-2024</span><br>SRM</li>
+                            
+                        </ul>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab" );
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+            </script>
+        <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</b >
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>I make beautiful and interactive websites ..</p>
+                        <a href="#"> Learn more </a>
+                        </div>
+                        <div> I
+                        <i class="fas fa-crop-alt"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
+                        tincidunt sit amet sapien quis.</p>
+                        <a href="#"> Learn more </a>
+                        </div>
+                        <div>
+                            <i class="fas fa-database"></i>
+                            <h2>Data Analysis</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
+                            tincidunt sit amet sapien quis.</p>
+                            <a href="#"> Learn more </a>
+                            </div>
+                </div>
+                </div>
+                </div>
+                <div id="portfolio">
+                    <div class="container">
+                    <h1 class="sub-title">My Work</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="work-1.png">
+                            <div class="layer">
+                                <h3>Website</h3>
+                                <p>The website which will hold all your bitcoins.</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                        </div>
+                        <div class="work">
+                            <img src="work-2.png">
+                            <div class="layer">
+                                <h3>Social Media App</h3>
+                                <p>The app connects you yo the talented people around the world.
+                                Download it from play store.</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                        </div>
+                        <div class="work">
+                            <img src="work-3.png">
+                            <div class="layer">
+                                <h3>Social Media App</h3>
+                                <p>The app connects you yo the talented people around the world.
+                                Download it from play store.</p>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn4"> See more </a>
+                    </div>
+                    </div>
+            
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p>sim@gmail.com</p>
+                        <p>231332434</p>
+                        <button class="btn"><a href="" class="get">Download Cv</a></button>
+                    </div>
+                    
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="emial" name="email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button class="btn">Submit</button>
+
+
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright Simrah</p>
+            </div>
+        </div>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbykQ0Aq5ww7FuMgyqT2VPl46bsMKVX5JAQSqlo9guM58o8Tyx4VyFic925_p7GLv50ESQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+        
+        </body>
+        </html>
